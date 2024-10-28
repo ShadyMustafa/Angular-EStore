@@ -1,0 +1,121 @@
+
+
+	<div id="header-wrap">
+
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="#"><i class="icon icon-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-youtube-play"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-behance-square"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a routerLink="/sign-in" class="user-account for-buy"><i
+									class="icon icon-user"></i><span>Account</span></a>
+							<a routerLink="/chart" class="cart for-buy" (click)="showCart()"><i class="fas fa-shopping-cart"></i><span >Cart:({{chart}}$)</span></a>
+							
+
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+							<div class="side-cart" *ngIf="showSideCart">
+								<i class="fa-solid fa-x" (click)="showSideCart = false"></i>
+								<div *ngFor="let cart of cartItems">
+									<table>
+										<tr>
+											<th>Name</th>
+											<th>Price</th>
+										</tr>
+										<tr>
+											<td>{{cart.name}}</td>
+											<td>{{cart.price | currency:'USD'}}</td>
+											<div class="buttons">
+												<button>Delete</button>
+												<button [routerLink]="'/our-store'" [queryParams]="{name:cart.name}">CheckOut</button>
+												<img [src]="cart.img"  width="90px" height="40px">
+											</div>
+											
+										</tr>
+									</table>	
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-2">
+						<div class="main-logo">
+							<a routerLink="/home"><h1>Edeje</h1></a>
+						</div>
+
+					</div>
+
+					<div class="col-md-10">
+
+						<nav id="navbar" >
+							<div class="main-menu stellarnav" >
+								<ul class="menu-list">
+									<li class="menu-item active"><a routerLink="/home">Home</a></li>
+									<li class="menu-item has-sub">
+										<a routerLink="/about" class="nav-link">About</a>
+
+										<ul>
+											<li><a routerLink="/about">About</a></li>
+											<li><a routerLink="/styles">Styles</a></li>
+											<li><a routerLink="/our-store">Our Store</a></li>
+											<li><a routerLink="/contact">Contact</a></li>
+											<li><a routerLink="/thank-you">Thank You</a></li>
+										</ul>
+
+									</li>
+									<li class="menu-item"><a routerLink="/offer" class="nav-link">Offer</a></li>
+								</ul>
+
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
+
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	

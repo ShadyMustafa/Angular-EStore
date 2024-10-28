@@ -1,0 +1,9 @@
+<div >
+<h1>{{product.name}}</h1>
+<div style="display: flex; justify-content: center;align-items: center;">
+    <button (click)="previousImage()">◀</button>
+    <img [src]='product.images[currentImageIndex]' alt="eddy" [class.fade]="isFading" (transitionend)="onTransitionEnd()" >
+    <button (click)="nextImage()">▶</button>
+</div>
+<h3> Price: {{product.price | currency:'USD'}}</h3>
+</div>

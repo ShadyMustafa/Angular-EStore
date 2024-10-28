@@ -1,0 +1,150 @@
+
+<section id="billboard">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <button class="prev slick-arrow">
+                    <i class="icon icon-arrow-left"></i>
+                </button>
+
+                <div class="main-slider pattern-overlay">
+                    <div class="slider-item">
+                        <div class="banner-content">
+                            <h2 class="banner-title">Life of the Wild</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+                                ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+                                urna, a eu.</p>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+                                        class="icon icon-ns-arrow-right"></i></a>
+                            </div>
+                        </div><!--banner-content-->
+                        <img src="assets/images/main-banner1.jpg" alt="banner" class="banner-image" width="480px" height="480px">
+                    </div><!--slider-item-->
+
+                    <div class="slider-item">
+                        <div class="banner-content">
+                            <h2 class="banner-title">Birds gonna be Happy</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+                                ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+                                urna, a eu.</p>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i
+                                        class="icon icon-ns-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <img src="assets/images/product-item1.jpg" alt="banner" class="banner-image" width="290px" height="290px">
+                    </div>
+                </div>
+
+                <button class="next slick-arrow">
+                    <i class="icon icon-arrow-right"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="client-holder" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="logo-wrap">
+                    <div class="grid">
+                       <h1>Mrs eddy</h1>
+                       <b>Mrs. Eddy is an amazing artist known for her captivating trippy art. She draws inspiration from her surroundings, translating everyday experiences into vibrant canvases. Her work often features psychedelic colors and imaginative themes, creating immersive visual experiences. With a passion for painting, she continually explores new ideas and techniques, making each canvas a unique expression of her creativity. Whether it's through abstract forms or intricate details, Mrs. Eddy's art invites viewers to see the world through her imaginative lens.</b>
+                    </div>
+                </div><!--image-holder-->
+            </div>
+        </div>
+    </div>
+</section>
+
+	<section id="featured-books" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality items</span>
+						</div>
+						<h2 class="section-title">Featured Art</h2>
+					</div>
+
+					<div class="product-list" data-aos="">
+						<div class="row">
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<a [routerLink]="'/our-store'" [queryParams]="{name:'Simple way of piece life'}"><img  src="assets/images/product-item1.jpg" alt="Books" class="product-item"></a>
+										
+										<button (click)="addButton(40 , 'Simple way of piece life','assets/images/product-item1.jpg')" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Simple way of piece life</h3>
+										<div class="item-price">$ 40.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<a [routerLink]="'/our-store'" [queryParams]="{name:'Brain Eater (u can change them later adorable :D)'}"><img src="assets/images/product-item2.jpg" alt="Books" class="product-item"></a>
+
+										<button (click)="addButton(38 , 'Brain Eater', 'assets/images/product-item2.jpg')" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Brain Eater (u can change them later adorable :D) </h3>
+										<div class="item-price">$ 38.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<a [routerLink]="'/our-store'" [queryParams]="{name:'Skull of Maddness'}">
+											<img src="assets/images/product-item3.jpg" alt="Books" class="product-item">
+										</a>
+										
+										<button (click)="addButton(45 , 'Skull of Maddness', 'assets/images/product-item3.jpg')" type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Skull of Maddness</h3>
+										<div class="item-price">$ 45.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="product-item">
+									<figure class="product-style">
+										<a [routerLink]="'/our-store'" [queryParams]="{name:'Once upon a time'}">
+											<img src="assets/images/product-item4.jpg" alt="Books" class="product-item">
+										</a>
+										
+										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to
+											Cart</button>
+									</figure>
+									<figcaption>
+										<h3>Once upon a time</h3>
+										<div class="item-price">$ 35.00</div>
+									</figcaption>
+								</div>
+							</div>
+
+						</div><!--ft-books-slider-->
+					</div><!--grid-->
+
+
+				</div><!--inner-content-->
+			</div>

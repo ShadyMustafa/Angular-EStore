@@ -1,0 +1,59 @@
+.side-cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 700px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.side-cart i {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    float: right;
+}
+
+.side-cart i:hover {
+    color: #ff0000; /* Change to red when hovering over the close icon */
+}
+
+.side-cart div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-cart div:last-child {
+    border-bottom: none;
+}
+
+
+.side-cart .cart-item {
+    font-size: 16px;
+    color: #444;
+}
+
+.side-cart .cart-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.side-cart .total {
+    text-align: right;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #000;
+}
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+ 
